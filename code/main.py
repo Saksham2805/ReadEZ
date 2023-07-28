@@ -11,8 +11,22 @@ def read_pdf(name):
     Returns the data in form of dictionary:
     key->pg no  value-> text on that page
     """
-    pass
-
+    # text storage
+    data = {}
+    # storage directory path
+    dir_path = '../input_data'
+    # check if the file is present in the directory
+    try:
+        file_path = os.path.join(dir_path, name)
+        # if it exists
+        if os.path.exists(file_path):
+            # we read the data
+            pass
+        else:
+            print(f"The file '{name}' does not exist in the directory '{dir_path}'.")
+    except Exception as e:
+        print(f"An error occured:{e}")
+    
 
 def generate_summary(text, from_page, to_page):
     """
