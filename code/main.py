@@ -21,11 +21,17 @@ def read_pdf(name):
         # if it exists
         if os.path.exists(file_path):
             # we read the data
-            pass
+            with fitz.open(file_path) as pdf_doc:
+                for page_num in range(pdf_doc.page_count):
+                    text = pdf_doc.load_page(page_num).get_text()
+                    if text:
+                        data[page_num+1] = text
         else:
             print(f"The file '{name}' does not exist in the directory '{dir_path}'.")
     except Exception as e:
         print(f"An error occured:{e}")
+    finally:
+        return data
     
 
 def generate_summary(text, from_page, to_page):
