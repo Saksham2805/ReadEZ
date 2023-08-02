@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+     /* Neon Blue font color */
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #334257; /* Charcoal background color with granules texture */
+    display: flex;
+    flex-direction: column; /* Change flex-direction to column */
+    /* Center the elements horizontally */
+    justify-content: center; /* Center the elements vertically */
+    box-sizing: border-box;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: flex-start; /* Align the content to the top */
+    margin-top: 0%; /* Adjust the top margin to move it further upwards */
+}
+
+.logo {
+    font-size: 48px;
+    color: #F2F4D1;
+    margin: 0; /* Remove the margin on the right side */
+}
+
+
+
+
+.typewriter {
+    display: inline-block; /* Show typewriter in the same line as logo */
+    font-size: 18px;
+    color: #B2D3BE
+}
+
+.lorem-text {
+    max-width: 700px;
+    margin: 20px auto; /* Center the block horizontally */
+    padding: 20px; /* Add padding to create space around the text */
+    text-align: center; /* Center the text within the block */
+    color: #EEEEEE;
+}
+
+.recap-text {
+    max-width: 1000px;
+    margin: 20px auto; /* Center the block horizontally */
+    padding: 20px; /* Add padding to create space around the text */
+    text-align: center; /* Center the text within the block */
+    color: #EEEEEE;
+}
+
+
+/* Optional: Add some styles for better readability */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    margin-top : 5px;
+}
+
+.card {
+    background-color: #476072; /* Grey background color */
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    cursor: pointer;
+    color: #ADDDD0;
+    justify-content: center;
+    margin: 32px;
+}
+
+.card h2 {
+    font-size: 24px;
+    color: #EEEEEE
+}
+
+.card h2:hover {
+    color: grey;
+}
+
+.card p {
+    font-size: 16px;    
+}
+
+.card:hover {
+    background-color: #ADDDD0; /* Neon Blue on hover */
+    color: #476072;
+}
+
+/* Existing CSS styles */
+
+/* ... */
+
+/* Add the following styles for the navigation bar */
+
+.navbar {
+    background-color: #F2F4D1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: #00587A
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links li a {
+    color: #00587A;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #0F3057; /* Neon Blue on hover */
+}
+
+/* ... (keep the existing CSS styles) */
+
+.upload-container {
+    display: flex; /* Use flexbox to create a horizontal layout */
+    justify-content: center; /* Center the buttons horizontally */
+    text-align: center; /* Center the buttons vertically */
+    margin-top: 30px; /* Add spacing from the "Lorem Ipsum" text */
+}
+
+
+.upload-button {
+    padding: 15px 30px; /* Increase padding for larger button size */
+    font-size: 20px; /* Increase font size for larger text */
+    border: 2px solid #ADDDD0; /* Neon Blue outline */
+    border-radius: 40px; /* Increase border-radius for more curved edges */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 15px; /* Add increased margin between buttons */
+    background-color: transparent; /* Remove the background color */
+    color: #F2F4D1; /* Set text color to Neon Blue */
+}
+
+.upload-button:hover {
+    background-color: #F2F4D1; /* Neon Blue background on hover */
+    color: #72ddc1;
+}
+
+
+/* Existing CSS styles */
+
+/* ... */
+
+/* Add the following styles for the modal */
+
+.modal {
+    display: none; /* Hide the modal by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+}
+
+.modal-content {
+    background-color: #334257;
+    margin: 10% auto;
+    padding: 30px; /* Increase padding for more space inside the modal */
+    border: 2px solid #F2F4D1; /* Neon Blue outline */
+    border-radius: 10px;
+    max-width: 500px;
+    color: #ADDDD0;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column; /* Align fields one below the other */
+}
+
+.form-fields label {
+    margin-bottom: 5px; /* Add spacing between labels and inputs */
+}
+
+.form-fields input,
+.submit-button {
+    margin-bottom: 15px; /* Add spacing between inputs and submit button */
+    background-color: #476072; /* Set the background color to grey */
+    border: 1px solid #F2F4D1; /* Set a light grey border */
+    border-radius: 5px;
+    padding: 8px; /* Adjust padding for a more compact input field */
+    color: #72ddc1; /* Set text color to black */
+}
+
+.page-fields {
+    display: flex;
+    gap: 15px; /* Add gap between the start page and end page fields */
+}
+
+.time-input {
+    width: 70px; /* Adjust the width of the page input fields */
+}
+
+.time-fields {
+    display: flex;
+    gap: 15px; /* Add gap between the start page and end page fields */
+}
+
+.page-input {
+    width: 70px; /* Adjust the width of the page input fields */
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #F2F4D1; /* Neon Blue color on hover */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ... (keep the existing CSS styles) */

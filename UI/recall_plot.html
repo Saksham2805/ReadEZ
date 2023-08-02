@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read EZ - Recap Plot Points</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <h1 class="logo">Read EZ</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        
+        <div class="logo-container">
+            <h1 class="logo">Recap Plot Points</h1>
+        </div>
+        
+        <div class="recap-text">
+            <p>
+                <!-- Add your Loren Ipsum text here -->
+                The 'Read EZ - Recap Plot Points tool' is designed to offer a succinct, chapter-wise summary of a storybook or a podcast, summarizing events and plot developments leading up to a specified point. By inputting the Book or the Podcast and desired point, users can swiftly grasp the crucial elements of the narrative without the need to go through the whole plot. Additionally, this tool goes beyond just summarizing; it further enhances the reading / listening experience by classifying each chapter based on its genre, making it even more convenient for readers and listeners to explore stories that align with their interests.
+            </p>
+        </div>
+
+        <!-- Existing HTML content -->
+
+        <!-- Add the modal container -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Recap a Book</h2>
+                <div class="form-fields">
+                    <label for="upload-book">Upload PDF file:</label>
+                    <input type="file" id="upload-book" required>
+                    <div class="page-fields">
+                        <label for="start-page">Start Page:</label>
+                        <input type="number" id="start-page" required class="page-input">
+                        <label for="end-page">End Page:</label>
+                        <input type="number" id="end-page" required class="page-input">
+                    </div>
+                    <button class="submit-button" onclick="submitForm()">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModalPodcast" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModalPodcast()">&times;</span>
+                <h2>Recap a Podcast</h2>
+                <div class="form-fields">
+                    <label for="upload-podcast">Upload Podcast:</label>
+                    <input type="file" id="upload-podcast" required>
+                    <div class="time-fields">
+                        <label for="start-time">Start Time:</label>
+                        <input type="time" id="start-time" required class="time-input">
+                        <label for="end-time">End Time:</label>
+                        <input type="time" id="end-time" required class="time-input">
+                    </div>
+                    <button class="submit-button" onclick="submitPodcastForm()">Submit</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="upload-container">
+            <div>
+                <button class="upload-button" onclick="showUploadForm()">Recap a Book</button>
+            </div>
+            <div>
+                <button class="upload-button" onclick="showPodcastForm()">Recap a Podcast</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
